@@ -107,12 +107,75 @@ console.log('\n\n===============================\n\n')
 // Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!////////////////
 
-const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelagnelo"]
+// const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelagnelo"]
 
-for (let turtle of ninjaTurtles) {
-    console.log(turtle.toUpperCase())
-}
+// for (let turtle of ninjaTurtles) {
+//     console.log(turtle.toUpperCase())
+// }
+
+console.log('\n\n===============================\n\n')
 
 
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+
+// Console log: the index of Titanic
+
+console.log(favMovies[8])
+
+// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+
+favMovies.sort()
+console.log(favMovies)
+
+
+// Use the method pop
+
+favMovies.pop()
+console.log(favMovies)
+
+// push"Guardians of the Galaxy"
+
+favMovies.push("Guardians of The Galaxy")
+console.log(favMovies)
+// Reverse the array
+
+favMovies.reverse()
+console.log(favMovies)
+
+// Use the shiftmethod
+
+favMovies.shift()
+console.log(favMovies)
+
+// unshift- what does it return?
+
+favMovies.unshift()
+console.log(favMovies)
+
+
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+
+
+
+
+// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+
+
+// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+
+
+// console.log your final results
+
+
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+
+
+// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
 
