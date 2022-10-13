@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+
+}
+
+.nav {
+    text-align: center;
+    background-color: grey;
+
+}
+
+.nav-list {
+    margin-right: 75%;
+
+}
+
+img {
+    width: 75%;
+    height: 75%;
+    padding-top: 15px;
+
+
+}
+
+h1 {
+    margin-right: 75%;
+    text-align: center;
+
+
+}
+
+.articles {
+    width: 75%;
+    height: 75%;
+    display: inline-block;
+    background-color: white;
+
+
+}
