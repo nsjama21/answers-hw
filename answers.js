@@ -117,87 +117,116 @@ console.log('\n\n===============================\n\n')
 
 
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 
-// Console log: the index of Titanic
+// // Console log: the index of Titanic
 
-console.log(favMovies[8])
+// console.log(favMovies[8])
 
-// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+// // Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
 
-// Note: if you have to add to the array, feel free to add any movie you'd like
+// // Note: if you have to add to the array, feel free to add any movie you'd like
 
-// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
-//Answer: it sorts the array in alphabetical order and yes, it alters it permanently
+// // use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+// //Answer: it sorts the array in alphabetical order and yes, it alters it permanently
 
-favMovies.sort()
-console.log(favMovies)
-
-
+// favMovies.sort()
+// console.log(favMovies)
 
 
-// Use the method pop
-
-favMovies.pop()
-console.log(favMovies)
-
-// push"Guardians of the Galaxy"
-
-favMovies.push("Guardians of The Galaxy")
-console.log(favMovies)
-// Reverse the array
-
-favMovies.reverse()
-console.log(favMovies)
-
-// Use the shiftmethod
-
-favMovies.shift()
-console.log(favMovies)
-
-// // unshift- what does it return?
-// // Answer: Unshift adds to the front of the array
 
 
-favMovies.unshift("Warrior")
-console.log(favMovies)
+// // Use the method pop
+
+// favMovies.pop()
+// console.log(favMovies)
+
+// // push"Guardians of the Galaxy"
+
+// favMovies.push("Guardians of The Galaxy")
+// console.log(favMovies)
+// // Reverse the array
+
+// favMovies.reverse()
+// console.log(favMovies)
+
+// // Use the shiftmethod
+
+// favMovies.shift()
+// console.log(favMovies)
+
+// // // unshift- what does it return?
+// // // Answer: Unshift adds to the front of the array
 
 
-// // splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-// // Answer: yes, it permanently altered the array
-
-const indexOfDjangoUnchained = favMovies.indexOf("Django Unchained")
-console.log(indexOfDjangoUnchained)
-favMovies.splice(3, 1, "Avatar")
-console.log(favMovies)
+// favMovies.unshift("Warrior")
+// console.log(favMovies)
 
 
-// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-// Answer: No, it dpes not permanentely alter the array
+// // // splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+// // // Answer: yes, it permanently altered the array
 
-console.log(favMovies.length)  // returns 19 
-
-favMovies.slice([9])
-
-// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
-// Answer: Slice takes a copy of the sliced array and returns it
-
-const sliceOfMovies = favMovies.slice([9])  // 9 is where it would start and without and end specified it will go to the end of the array automatically
+// const indexOfDjangoUnchained = favMovies.indexOf("Django Unchained")
+// console.log(indexOfDjangoUnchained)
+// favMovies.splice(3, 1, "Avatar")
+// console.log(favMovies)
 
 
-// console.log your final results
+// // slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+// // Answer: No, it dpes not permanentely alter the array
 
-console.log(sliceOfMovies)
+// console.log(favMovies.length)  // returns 19
 
-// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-// Answer --- you should get a -1 as index for a removed item from an array
+// favMovies.slice([9])
 
-const fastMovieIndex = favMovies.indexOf("Fast and Furious")
-console.log(fastMovieIndex)
+// // store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+// // Answer: Slice takes a copy of the sliced array and returns it
 
-// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
-// Answer: Arrays are not constants and we can change elements in them
+// const sliceOfMovies = favMovies.slice([9])  // 9 is where it would start and without and end specified it will go to the end of the array automatically
 
 
+// // console.log your final results
+
+// console.log(sliceOfMovies)
+
+// // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// // Answer --- you should get a -1 as index for a removed item from an array
+
+// const fastMovieIndex = favMovies.indexOf("Fast and Furious")
+// console.log(fastMovieIndex)
+
+// // Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
+// // Answer: Arrays are not constants and we can change elements in them
+
+console.log('\n\n===============================\n\n')
+
+////////////////////////WHERE'S WALDO//////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+// With the following multi-dimensional array
+
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+// ["Lucinda", "Jacc", "Neff", "Snoop"],
+// ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// // Remove Eggbert (hint look at the slice/splice method(s))
+
+// // const indexOfEggbert = whereIsWaldo.indexOf("Eggbert")
+// // console.log(indexOfEggbert)
+// // const eggbert = whereIsWaldo.slice([1]).splice([1])
+// // console.log(eggbert)
+
+// // // Change "Neff" to "No One"
+
+// // whereIsWaldo[2][2] = "No One"
+// // console.log(whereIsWaldo)
+
+// // Access and console.log "Waldo"
+
+// console.log(whereIsWaldo[3][1][1])
+
+
+
+console.log('\n\n===============================\n\n')
 
